@@ -54,7 +54,7 @@
   p > code,
   li > code,
   a > code {
-    @apply bg-gray-300 p-1 dark:bg-gray-700;
+    @apply bg-gray-300 p-1 dark:bg-gray-700 text-gray-900 dark:text-white;
   }
 }
 
