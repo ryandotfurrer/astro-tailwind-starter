@@ -1,54 +1,22 @@
-# Astro Starter Kit: Basics
+# Astro & Tailwind Starter
 
-```sh
-npm create astro@latest -- --template basics
-```
+Edit `src/pages/index.astro` to get started.
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/basics)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/basics)
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/basics/devcontainer.json)
+## More about this starter
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+I created this started solely for myself to have a better and faster jumping off point on new NextJS projects. While it _largely_ un-opinionated, that does not mean there are zero opinions.
 
-![just-the-basics](https://github.com/withastro/astro/assets/2244813/a0a5533c-a856-4198-8470-2d67b1d7c554)
+This starter template _may_ grow a bit with styles and components that match my desired style. You can, of course, change whatever you would like in the appropriate folders. But to begin with this starter features:
 
-## 🚀 Project Structure
+- Responsive font-sizing
+- Responsive element spacing due to the addition of the .flow class
+- Poppins Google Font added to Tailwinds `fontSans` class
+- Basic light and dark mode
 
-Inside of your Astro project, you'll see the following folders and files:
+## The `.flow` Class
 
-```text
-/
-├── public/
-│   └── favicon.svg
-├── src/
-│   ├── components/
-│   │   └── Card.astro
-│   ├── layouts/
-│   │   └── Layout.astro
-│   └── pages/
-│       └── index.astro
-└── package.json
-```
+Here is a quick breakdown of the `.flow` class:
 
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
-
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
-
-Any static assets, like images, can be placed in the `public/` directory.
-
-## 🧞 Commands
-
-All commands are run from the root of the project, from a terminal:
-
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
-
-## 👀 Want to learn more?
-
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+1. Help manage flow and rhythm of elements.
+2. Every direct sibling child element of has margin-block-start added to it.
+3. Uses 1em as a fallback from clamp syntax.

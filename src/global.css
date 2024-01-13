@@ -14,7 +14,7 @@
   h4,
   h5,
   h6 {
-    @apply text-balance font-semibold;
+    @apply text-balance font-semibold text-gray-900 dark:text-white;
   }
 
   h1,
@@ -51,16 +51,10 @@
     @apply underline underline-offset-2;
   }
 
-  h1 > code,
-  h2 > code,
-  h3 > code,
-  h4 > code,
-  h5 > code,
-  h6 > code,
   p > code,
   li > code,
   a > code {
-    @apply bg-zinc-300 p-1 dark:bg-zinc-700;
+    @apply bg-gray-300 p-1 dark:bg-gray-700;
   }
 }
 
