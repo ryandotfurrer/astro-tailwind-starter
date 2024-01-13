@@ -9,14 +9,12 @@
   Email Me
 </li>
 
-<script is:inline>
-
-
+<script>
   const emailCopy= document.getElementById('copy-email-list-item');
-  emailCopy?.addEventListener('click', copyEmail);
 
-  function copyEmail(emailCopy) {
-
+  
+  function copyEmail(emailCopy: any) {
+    
     navigator.clipboard
     .writeText(emailCopy.target.getAttribute)
     .then(() => {
@@ -26,7 +24,8 @@
       console.log(`Failed to copy: ${err}`);
     });
   }
-
+  
+  emailCopy?.addEventListener('click', copyEmail);
   // emailCopy?.addEventListener('click', (e:typeof event) => {
 
   // navigator.clipboard
