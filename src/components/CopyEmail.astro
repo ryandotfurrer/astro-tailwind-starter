@@ -1,3 +1,6 @@
+---
+---
+
 <li 
   class="no-underline hover:underline hover:text-gray-900 dark:hover:text-white cursor-pointer" 
   title="ryandotfurrer@gmail.com"
@@ -6,16 +9,16 @@
   Email Me
 </li>
 
-<script>
+<script is:inline>
 
 
   const emailCopy= document.getElementById('copy-email-list-item');
   emailCopy?.addEventListener('click', copyEmail);
 
-  function copyEmail(e) {
+  function copyEmail(emailCopy) {
 
     navigator.clipboard
-    .writeText(e.target.getAttribute)
+    .writeText(emailCopy.target.getAttribute)
     .then(() => {
       alert("Email copied: ryandotfurrer@gmail.com");
     })
